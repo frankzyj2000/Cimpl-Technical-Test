@@ -36,8 +36,9 @@ namespace CalculatorTest
         [Fact]
         public void ShouldDivideTwoNumbersWithDecimalResult()
         {
-            var x = new Calculator().Divide(5, 2);
-            Assert.Equal(2.5, x);
+            double resultDecimal = 5.0/3;
+            var x = new Calculator().Divide(5, 3);
+            Assert.Equal(resultDecimal, x);
         }
         
         [Fact]
