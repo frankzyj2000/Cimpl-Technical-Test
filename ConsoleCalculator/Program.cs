@@ -19,8 +19,9 @@ namespace ConsoleCalculator
 
             var calculator = new Calculator();
 
-
-
+            //CODE_REVIEW
+            //Following can be replaced with switch
+            //The color can be set has default of Red to remove repeating
             if (result == "sum")
             {
                 calculator.color = ConsoleColor.Red;
