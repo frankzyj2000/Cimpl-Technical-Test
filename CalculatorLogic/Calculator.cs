@@ -30,9 +30,13 @@ namespace CalculatorLogic
             return x;
         }
 
-        public double Divide(double a, double b)
+        public double? Divide(double a, double b)
         {
-            var x = a / b;
+            double? x = null;
+            if (b != 0)
+            {
+                x = a / b;
+            }
             Console.ForegroundColor = color;
             Console.WriteLine($"The result is: {x}");
             return x;
